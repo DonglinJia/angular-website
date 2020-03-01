@@ -1,3 +1,51 @@
-<div>
-
+<div class="column-flex">
+  <div class="mat-card border-radius-5">
+    <div class="mat-card-header text-center font-size-20 padding-top-6">Brief Introduction</div>
+    <div class="padding-10 font-size-16">My name is {{ this.name }}, {{ this.currentYear }} year {{ this.major }} student studying at University of Waterloo.
+      Expected graduate in {{ this.graduateYear }}. </div>
+  </div>
+  <div class="row-flex margin-top-30">
+    <div class="mat-card border-radius-5 flex-1-1-50 margin-right-15">
+      <div class="mat-card-header text-center font-size-20 padding-top-6">My External Links</div>
+        <mat-list class="padding-10">
+          <mat-divider></mat-divider>
+          <mat-list-item><a href="assets/files/Donglin Jia-final.pdf" target="_blank">This is my Resume</a></mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item><a href="https://www.linkedin.com/in/donglin-jia/" target="_blank">This is my LinkedIn</a></mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item><a href="https://github.com/DonglinJia" target="_blank">This is my Github</a></mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <a href="https://www.youtube.com/channel/UCBAmGcsZwKd99E-MPK5NSLQ?view_as=subscriber" target="_blank">
+            This is my YouTube Gaming Channel</a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+    </div>
+    <div class="mat-card border-radius-5 flex-1-1-50">
+      <div class="mat-card-header text-center font-size-20 padding-top-6">Sports I play</div>
+      <mat-divider></mat-divider>
+      <div class="padding-10 column-flex">
+        <div class="row-flex space-between">
+          <img class="height-10vh width-15vh border-radius-5"
+               [src]="this.bikeURL" alt="" role="button" (click)="openPopup('bike')">
+          <img class="height-10vh width-15vh border-radius-5"
+               [src]="this.runningURL" alt="" role="button" (click)="openPopup('run')">
+          <img class="height-10vh width-15vh border-radius-5"
+               [src]="this.swimmingURL" alt="" role="button" (click)="openPopup('swim')">
+        </div>
+        <div class="row-flex space-between margin-top-15">
+          <img class="height-10vh width-15vh border-radius-5"
+               [src]="this.skiingURL" alt="" role="button" (click)="openPopup('ski')">
+          <img class="height-10vh width-15vh border-radius-5"
+               [src]="this.snowboardURL" alt="" role="button" (click)="openPopup('snowboard')">
+          <img class="height-10vh width-15vh border-radius-5"
+               [src]="this.badmintonURL" alt="" role="button" (click)="openPopup('badminton')">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <a href="mailto: {{ this.emailAddress }} ">Write to me</a>
+  </div>
 </div>

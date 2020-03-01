@@ -1,15 +1,96 @@
+// Color
 .background-color-dark {
-  background-color: #434343 !important;
+  background-color: #1C2833 !important;
 }
 
 .color-white {
   color: white !important;
 }
 
-.margin-top-30 {
-  margin-top: 30px !important;
+.color-black {
+  color: black !important;
 }
 
 .float-right {
   float: right !important;
 }
+
+.flex {
+  display: flex;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-1-1-50 {
+  flex: 1 1 50%;
+}
+
+// Margin Global SCSS
+.margin-top-15 {
+  margin-top: 15px !important;
+}
+
+.margin-top-30 {
+  margin-top: 30px !important;
+}
+
+.margin-right-15 {
+  margin-right: 15px !important;
+}
+
+// Padding Global SCSS
+.padding-10 {
+  padding: 10px !important;
+}
+
+.padding-top-6 {
+  padding-top: 6px !important;
+}
+
+// Font Global SCSS
+.font-size-14 {
+  font-size: 14px !important;
+}
+
+.font-size-16 {
+  font-size: 16px !important;
+}
+
+.font-size-20 {
+  font-size: 20px !important;
+}
+
+// height and width SCSS
+.width-15vh {
+  width: 15vh !important;
+}
+
+.height-100vh {
+  height: 100vh !important;
+}
+
+.height-10vh {
+  height: 10vh !important;
+}
+
+// Other Style
+.border-radius-5 {
+  border-radius: 5px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

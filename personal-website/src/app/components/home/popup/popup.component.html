@@ -1,0 +1,20 @@
+<div>
+  <ul class="padding-10" style="list-style-type:none">
+    <mat-divider></mat-divider>
+    <li>Name: {{ this.data.name }}</li>
+    <mat-divider></mat-divider>
+    <li>Speed: {{ this.data.speed }}</li>
+    <mat-divider></mat-divider>
+    <li>Duration: {{ this.data.duration }}</li>
+    <mat-divider></mat-divider>
+    <li>Dangerous Level:{{ this.data.dangerousLevel }}</li>
+    <mat-divider></mat-divider>
+    <li>Preparation: {{ this.data.preparation }}</li>
+    <mat-divider></mat-divider>
+    <li>Model: {{ this.data.model }}</li>
+    <mat-divider></mat-divider>
+  </ul>
+  <div>
+    <button mat-button class="float-right" (click)="onNoClick()">Close</button>
+  </div>
+</div>
