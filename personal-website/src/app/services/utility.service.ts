@@ -25,7 +25,7 @@ export class UtilityService {
         duration: '2 hours usually',
         dangerousLevel: 'I would to say 2 (range from 0 to 10). Indoor exercise and no physically collision.',
         preparation: 'swimming pants',
-        speed: 'N/A',
+        speed: '2m/s',
         model: 'Love all four styles. Like Free Style best'
       };
     } else if (type === 'run') {

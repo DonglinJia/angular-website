@@ -12,6 +12,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
 import { PopupComponent } from './components/home/popup/popup.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { HorchartComponent } from './components/home/horchart/horchart.component';
+import { ChartsModule } from 'ng2-charts';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,7 +31,8 @@ const appRoutes: Routes = [
     CoursesComponent,
     HomeComponent,
     LearningComponent,
-    PopupComponent
+    PopupComponent,
+    HorchartComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,9 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
