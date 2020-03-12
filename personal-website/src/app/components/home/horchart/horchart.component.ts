@@ -18,7 +18,7 @@ export class HorchartComponent implements OnInit {
   ngOnInit(): void {
     this.chartData = [
       { data: [80, 90, 90, 70, 60, 80], label: 'affection' },
-      { data: [80, 100, 100, 90, 100, 90], label: 'fatigue after exercise'},
+      { data: [80, 100, 100, 90, 100, 90], label: 'fatigue'},
       { data: [30, 100, 80, 80, 40, 100], label: 'likelihood'}
     ];
     this.chartLabels = [
@@ -33,6 +33,13 @@ export class HorchartComponent implements OnInit {
       scale: {
         ticks: {
           min: 0
+        }
+      },
+      legend: {
+        display: true,
+        position: 'left',
+        labels: {
+          boxWidth: 12
         }
       }
     };

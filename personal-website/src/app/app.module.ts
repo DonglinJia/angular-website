@@ -15,6 +15,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { HorchartComponent } from './components/home/horchart/horchart.component';
 import { ChartsModule } from 'ng2-charts';
+import { BarChartComponent } from './components/home/bar-chart/bar-chart.component';
+import {NgApexchartsModule} from 'ng-apexcharts';
 
 
 const appRoutes: Routes = [
@@ -32,7 +34,8 @@ const appRoutes: Routes = [
     HomeComponent,
     LearningComponent,
     PopupComponent,
-    HorchartComponent
+    HorchartComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ const appRoutes: Routes = [
     MatListModule,
     MatDialogModule,
     MatButtonModule,
-    ChartsModule
+    ChartsModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
