@@ -77,6 +77,14 @@
   width: 15vh !important;
 }
 
+.max-width-400 {
+  max-width: 400px !important;
+}
+
+.max-width-500 {
+  max-width: 500px !important;
+}
+
 .height-100vh {
   height: 100vh !important;
 }
@@ -102,6 +110,20 @@
   display: block !important;
 }
 
+.content-center{
+  align-self: center !important;
+}
+
+// Flex:
+.flex-column {
+  display: flex !important;
+  flex-flow: column;
+}
+
+.flex-row {
+  display: flex !important;
+  flex-flow: row;
+}
 
 
 html, body { height: 100%; }

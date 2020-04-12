@@ -25,10 +25,7 @@ export class BarChartComponent implements OnInit {
 
   @ViewChild('chart') chart: ChartOptions;
 
-  public dataSets = [];
-  public chartType = 'horizontalBar';
   public chartOptions: ChartOptions;
-  public chartLabels = [];
 
   constructor() {
   }
@@ -38,7 +35,7 @@ export class BarChartComponent implements OnInit {
       series: [
         {
           name: 'basic',
-          data: [100, 100, 90, 80, 60, 50, 40]
+          data: [100, 100, 90, 70, 60, 75, 40]
         }
       ],
       chart: {
