@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-courses',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,
+              private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+  }
+
+  gotoIELTS() {
+    this.router.navigate(['IELTS'], {relativeTo: this.route});
+  }
+
+  gotoITCT() {
+    this.router.navigate(['ComputingTheory'], {relativeTo: this.route});
   }
 
 }

@@ -19,11 +19,19 @@ import { BarChartComponent } from './components/home/bar-chart/bar-chart.compone
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { PythonmysqlComponent } from './components/learning/pythonmysql/pythonmysql.component';
 import { MatCardModule } from '@angular/material/card';
+import { IELTSComponent } from './components/courses/ielts/ielts.component';
+import { FlexModule } from '@angular/flex-layout';
+import { ComputingtheoryComponent } from './components/courses/computingtheory/computingtheory.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'courses', component: CoursesComponent },
+  { path: 'courses', component: CoursesComponent,
+    children: [
+      { path: 'IELTS', component: IELTSComponent },
+      { path: 'ComputingTheory', component: ComputingtheoryComponent}
+    ]
+  },
   { path: 'learning', component: LearningComponent },
   { path: 'tools', component: ToolsComponent }
 ];
@@ -38,7 +46,9 @@ const appRoutes: Routes = [
     PopupComponent,
     HorchartComponent,
     BarChartComponent,
-    PythonmysqlComponent
+    PythonmysqlComponent,
+    IELTSComponent,
+    ComputingtheoryComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +60,8 @@ const appRoutes: Routes = [
     MatButtonModule,
     ChartsModule,
     NgApexchartsModule,
-    MatCardModule
+    MatCardModule,
+    FlexModule
   ],
   providers: [],
   bootstrap: [AppComponent]
