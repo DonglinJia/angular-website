@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PythonmysqlComponent implements OnInit {
 
+  public imageURL;
   constructor() { }
 
   ngOnInit(): void {
+    this.imageURL = 'assets/img/python_mysql.png';
   }
 
   downloadFile() {
