@@ -17,12 +17,12 @@ import { HorchartComponent } from './components/home/horchart/horchart.component
 import { ChartsModule } from 'ng2-charts';
 import { BarChartComponent } from './components/home/bar-chart/bar-chart.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
-import { PythonmysqlComponent } from './components/tools/pythonmysql/pythonmysql.component';
+import { PythonmysqlComponent } from './components/learning/pythonmysql/pythonmysql.component';
 import { MatCardModule } from '@angular/material/card';
 import { IELTSComponent } from './components/courses/ielts/ielts.component';
 import { FlexModule } from '@angular/flex-layout';
 import { ComputingtheoryComponent } from './components/courses/computingtheory/computingtheory.component';
-import { TensorflowComponent } from './components/tools/tensorflow/tensorflow.component';
+import { TensorflowComponent } from './components/learning/tensorflow/tensorflow.component';
 
 
 const appRoutes: Routes = [
@@ -33,6 +33,7 @@ const appRoutes: Routes = [
       { path: 'ComputingTheory', component: ComputingtheoryComponent}
     ]
   },
+  { path: 'learning', component: LearningComponent },
   { path: 'tools', component: ToolsComponent }
 ];
 
