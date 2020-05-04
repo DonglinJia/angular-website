@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-pythonmysql',
-  templateUrl: './pythonmysql.component.html',
-  styleUrls: ['./pythonmysql.component.scss']
+  selector: 'app-tensorflow',
+  templateUrl: './tensorflow.component.html',
+  styleUrls: ['./tensorflow.component.scss']
 })
-export class PythonmysqlComponent implements OnInit {
+export class TensorflowComponent implements OnInit {
 
   public imageURL;
   constructor() { }
 
   ngOnInit(): void {
-    this.imageURL = 'assets/img/pythonmysql.jpeg';
+    this.imageURL = 'assets/img/tensorflow.png';
   }
 
   downloadFile() {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'assets/files/mysql.pdf');
-    link.setAttribute('download', 'mysql.pdf');
+    link.setAttribute('href', 'assets/files/tensorflow.pdf');
+    link.setAttribute('download', 'intro.pdf');
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -27,7 +27,7 @@ export class PythonmysqlComponent implements OnInit {
   openFile() {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'assets/files/mysql.pdf');
+    link.setAttribute('href', 'assets/files/tensorflow.pdf');
     document.body.appendChild(link);
     link.click();
     link.remove();

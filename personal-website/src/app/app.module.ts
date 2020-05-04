@@ -22,6 +22,7 @@ import { MatCardModule } from '@angular/material/card';
 import { IELTSComponent } from './components/courses/ielts/ielts.component';
 import { FlexModule } from '@angular/flex-layout';
 import { ComputingtheoryComponent } from './components/courses/computingtheory/computingtheory.component';
+import { TensorflowComponent } from './components/learning/tensorflow/tensorflow.component';
 
 
 const appRoutes: Routes = [
@@ -48,7 +49,8 @@ const appRoutes: Routes = [
     BarChartComponent,
     PythonmysqlComponent,
     IELTSComponent,
-    ComputingtheoryComponent
+    ComputingtheoryComponent,
+    TensorflowComponent
   ],
   imports: [
     BrowserModule,

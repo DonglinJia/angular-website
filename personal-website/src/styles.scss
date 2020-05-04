@@ -89,6 +89,10 @@
   width: 100vh !important;
 }
 
+.max-width-200 {
+  max-width: 200px !important;
+}
+
 .max-width-400 {
   max-width: 400px !important;
 }
@@ -120,6 +124,10 @@
 
 .space-even {
   justify-content: space-evenly;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 .display-block {
