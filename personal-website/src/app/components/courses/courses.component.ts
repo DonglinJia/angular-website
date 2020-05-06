@@ -22,4 +22,8 @@ export class CoursesComponent implements OnInit {
     this.router.navigate(['ComputingTheory'], {relativeTo: this.route});
   }
 
+  gotoOS() {
+    this.router.navigate(['OS'], {relativeTo: this.route});
+  }
+
 }

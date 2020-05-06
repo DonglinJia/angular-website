@@ -23,6 +23,7 @@ import { IELTSComponent } from './components/courses/ielts/ielts.component';
 import { FlexModule } from '@angular/flex-layout';
 import { ComputingtheoryComponent } from './components/courses/computingtheory/computingtheory.component';
 import { TensorflowComponent } from './components/learning/tensorflow/tensorflow.component';
+import { OsComponent } from './components/courses/os/os.component';
 
 
 const appRoutes: Routes = [
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
   { path: 'courses', component: CoursesComponent,
     children: [
       { path: 'IELTS', component: IELTSComponent },
-      { path: 'ComputingTheory', component: ComputingtheoryComponent}
+      { path: 'ComputingTheory', component: ComputingtheoryComponent},
+      { path: 'OS', component: OsComponent}
     ]
   },
   { path: 'learning', component: LearningComponent },
@@ -50,7 +52,8 @@ const appRoutes: Routes = [
     PythonmysqlComponent,
     IELTSComponent,
     ComputingtheoryComponent,
-    TensorflowComponent
+    TensorflowComponent,
+    OsComponent
   ],
   imports: [
     BrowserModule,
