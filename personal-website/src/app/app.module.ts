@@ -24,6 +24,9 @@ import { FlexModule } from '@angular/flex-layout';
 import { ComputingtheoryComponent } from './components/courses/computingtheory/computingtheory.component';
 import { TensorflowComponent } from './components/learning/tensorflow/tensorflow.component';
 import { OsComponent } from './components/courses/os/os.component';
+import { AlgorithmComponent } from './components/courses/algorithm/algorithm.component';
+import { GraphComponent } from './components/courses/graph/graph.component';
+import { AIComponent } from './components/courses/ai/ai.component';
 
 
 const appRoutes: Routes = [
@@ -31,8 +34,11 @@ const appRoutes: Routes = [
   { path: 'courses', component: CoursesComponent,
     children: [
       { path: 'IELTS', component: IELTSComponent },
-      { path: 'ComputingTheory', component: ComputingtheoryComponent},
-      { path: 'OS', component: OsComponent}
+      { path: 'ComputingTheory', component: ComputingtheoryComponent },
+      { path: 'OS', component: OsComponent },
+      { path: 'Algo', component: AlgorithmComponent },
+      { path: 'graph', component: GraphComponent },
+      { path: 'AI', component: AIComponent }
     ]
   },
   { path: 'learning', component: LearningComponent },
@@ -53,7 +59,10 @@ const appRoutes: Routes = [
     IELTSComponent,
     ComputingtheoryComponent,
     TensorflowComponent,
-    OsComponent
+    OsComponent,
+    AlgorithmComponent,
+    GraphComponent,
+    AIComponent
   ],
   imports: [
     BrowserModule,

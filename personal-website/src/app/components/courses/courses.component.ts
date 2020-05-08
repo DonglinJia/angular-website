@@ -14,16 +14,8 @@ export class CoursesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  gotoIELTS() {
-    this.router.navigate(['IELTS'], {relativeTo: this.route});
-  }
-
-  gotoITCT() {
-    this.router.navigate(['ComputingTheory'], {relativeTo: this.route});
-  }
-
-  gotoOS() {
-    this.router.navigate(['OS'], {relativeTo: this.route});
+  gotoPage(type: string) {
+    this.router.navigate([type], {relativeTo: this.route});
   }
 
 }

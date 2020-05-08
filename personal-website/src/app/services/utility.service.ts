@@ -73,4 +73,42 @@ export class UtilityService {
     }
   }
 
+  getAlgolist() {
+    return [
+      {
+        title: '2 Sum & 3 Sum Problem',
+        intro: 'You are given an array of n integers and a number k. Determine whether ' +
+          'there is a pair of elements in the array that sums to exactly k.',
+        url: 'assets/files/2sum.pdf'
+      },
+      {
+        title: 'Bentley\' s Problem',
+        intro: 'Given A[1..n] find the maximum sum for the subarray or return 0 if all elements of the array are negative.',
+        url: 'assets/files/Bentley.pdf'
+      },
+      {
+        title: 'Divide and Conquer',
+        intro: 'A divide-and-conquer algorithm works by recursively breaking down a problem into two' +
+          'or more sub-problems of the same or related type, until these become simple enough to be solved directly.',
+        url: 'assets/files/divide-and-conque.pdf'
+      },
+      {
+        title: 'Master Method',
+        intro: 'A method to resolve efficiency computation.',
+        url: 'assets/files/Master_Method.pdf'
+      },
+      {
+        title: 'Greedy Algorithm',
+        intro: 'A greedy algorithm is any algorithm that follows the problem-solving heuristic of making the locally optimal ' +
+          'choice at each stage with the intent of finding a global optimum.',
+        url: 'assets/files/greedy.pdf'
+      },
+      {
+        title: 'Intractability and Undecidability',
+        intro: 'Explain basic concepts about p, np, npc and np-hard problems.',
+        url: 'assets/files/np.pdf'
+      }
+    ];
+  }
+
 }

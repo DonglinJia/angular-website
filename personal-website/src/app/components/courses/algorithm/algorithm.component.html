@@ -1,0 +1,17 @@
+<div fxLayout="column" fxLayoutGap="20px">
+  <div *ngFor="let algo of algos">
+    <mat-card class="max-width-400">
+      <mat-card-header>
+        <mat-card-title>{{ algo.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ algo.intro }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button (click)="openFile(algo.url)">Preview</button>
+        <button mat-button (click)="downloadFile(algo.url)">Download</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
