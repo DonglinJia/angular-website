@@ -1,6 +1,14 @@
+@import '~ag-grid-community/dist/styles/ag-grid.css';
+@import '~ag-grid-community/dist/styles/ag-theme-balham.css';
+
+
 // Color
 .background-color-dark {
   background-color: #1C2833 !important;
+}
+
+.background-color-light-yellow {
+  background-color: #f7ecb5;
 }
 
 .color-white {
@@ -111,6 +119,10 @@
 
 .height-5vh {
   height: 5vh !important;
+}
+
+.height-auto {
+  height: auto !important;
 }
 
 // Other Style

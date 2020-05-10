@@ -1,0 +1,26 @@
+<div class="height-auto background-color-light-yellow color-black border-radius-5" style="width: auto">
+    <ag-grid-angular
+      style="height: 200px;"
+      class="ag-theme-alpine color-black background-color-light-yellow border-radius-5"
+      [rowData]="data"
+      [columnDefs]="columnDefs"
+      [gridOptions]="gridOptions"
+      (gridSizeChanged)="resizeColumns($event)"
+    >
+    </ag-grid-angular>
+    <div *ngIf="showAddItem" fxLayout="column" fxLayoutGap="10px" class="content-center">
+      <div>Content: <input type="text" [(ngModel)]="content"></div>
+      <div>Priority: <input type="number" [(ngModel)]="priority"></div>
+      <div>Date: <input type="date" [(ngModel)]="time"></div>
+      <div>
+        <button mat-button (click)="updatePlan()">Submit</button>
+        <button mat-button (click)="clearPlan()">Clear</button>
+        <button mat-button (click)="cancelPlan()">Cancel</button>
+      </div>
+    </div>
+  <div *ngIf="!showAddItem">
+    <button mat-button (click)="getPlan()">View</button>
+    <button mat-button (click)="addPlan()">Add</button>
+    <button mat-button (click)="deletePlan()">Delete</button>
+  </div>
+</div>

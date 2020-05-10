@@ -27,6 +27,10 @@ import { OsComponent } from './components/courses/os/os.component';
 import { AlgorithmComponent } from './components/courses/algorithm/algorithm.component';
 import { GraphComponent } from './components/courses/graph/graph.component';
 import { AIComponent } from './components/courses/ai/ai.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ToDoListComponent } from './components/tools/to-do-list/to-do-list.component';
+import { AgGridModule } from 'ag-grid-angular';
+import {FormsModule} from '@angular/forms';
 
 
 const appRoutes: Routes = [
@@ -42,7 +46,11 @@ const appRoutes: Routes = [
     ]
   },
   { path: 'learning', component: LearningComponent },
-  { path: 'tools', component: ToolsComponent }
+  { path: 'tools', component: ToolsComponent,
+    children: [
+      { path: 'todo', component: ToDoListComponent }
+    ]
+  }
 ];
 
 @NgModule({
@@ -62,7 +70,8 @@ const appRoutes: Routes = [
     OsComponent,
     AlgorithmComponent,
     GraphComponent,
-    AIComponent
+    AIComponent,
+    ToDoListComponent
   ],
   imports: [
     BrowserModule,
@@ -75,7 +84,10 @@ const appRoutes: Routes = [
     ChartsModule,
     NgApexchartsModule,
     MatCardModule,
-    FlexModule
+    FlexModule,
+    HttpClientModule,
+    AgGridModule.withComponents([]),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
