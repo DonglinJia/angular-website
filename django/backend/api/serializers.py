@@ -13,4 +13,4 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class MissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Mission
-        fields = ('content', 'date', 'priority')
+        fields = ('id', 'content', 'date', 'priority')

@@ -24,21 +24,3 @@ class MissionViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['date', 'priority']
 
-    # @action(method=['post'], detail=False)
-    # def post(self, request):
-
-
-    # @action(methods=['get'], detail=False)
-    # def statistics(self, request):
-    #
-    #     queryset = Mission.objects.all()
-    #     search_date = request.GET.get('date')
-    #     search_priority = request.GET.get('priority')
-    #
-    #     if search_date:
-    #         queryset = queryset.filter(date=search_date)
-    #     if search_priority:
-    #         queryset = queryset.filter(priority=search_priority)
-    #
-    #     return HttpResponse(queryset)
-
