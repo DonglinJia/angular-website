@@ -10,7 +10,6 @@ import { PopupComponent } from './popup/popup.component';
 })
 export class HomeComponent implements OnInit {
 
-  emailAddress: string;
   name: string;
   currentYear: string;
   major: string;
@@ -27,7 +26,6 @@ export class HomeComponent implements OnInit {
   constructor(private utilityService: UtilityService, public popup: MatDialog) { }
 
   ngOnInit(): void {
-    this.emailAddress = 'd24jia@uwaterloo.ca';
     this.name = 'Donglin Jia';
     this.currentYear = 'third';
     this.major = 'Computer Science';

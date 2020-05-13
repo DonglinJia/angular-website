@@ -8,10 +8,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ToolsComponent implements OnInit {
 
+  public emailAddress: string;
   constructor(private router: Router,
               private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.emailAddress = 'd24jia@uwaterloo.ca';
   }
 
   gotoPage(type: string) {

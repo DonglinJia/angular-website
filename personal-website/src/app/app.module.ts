@@ -31,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PopMessageComponent, ToDoListComponent} from './components/tools/to-do-list/to-do-list.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { FormsModule } from '@angular/forms';
-import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { CognitivePsychComponent } from './components/courses/cognitive-psych/cognitive-psych.component';
 
 
 const appRoutes: Routes = [
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
       { path: 'OS', component: OsComponent },
       { path: 'Algo', component: AlgorithmComponent },
       { path: 'graph', component: GraphComponent },
-      { path: 'AI', component: AIComponent }
+      { path: 'AI', component: AIComponent },
+      { path: 'CogPsych', component: CognitivePsychComponent }
     ]
   },
   { path: 'learning', component: LearningComponent },
@@ -73,7 +75,8 @@ const appRoutes: Routes = [
     GraphComponent,
     AIComponent,
     ToDoListComponent,
-    PopMessageComponent
+    PopMessageComponent,
+    CognitivePsychComponent
   ],
   imports: [
     BrowserModule,

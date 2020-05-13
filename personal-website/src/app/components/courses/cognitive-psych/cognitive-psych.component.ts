@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ai',
-  templateUrl: './ai.component.html',
-  styleUrls: ['./ai.component.scss']
+  selector: 'app-cognitive-psych',
+  templateUrl: './cognitive-psych.component.html',
+  styleUrls: ['./cognitive-psych.component.scss']
 })
-export class AIComponent implements OnInit {
+export class CognitivePsychComponent implements OnInit {
 
   constructor() { }
 
@@ -15,8 +15,8 @@ export class AIComponent implements OnInit {
   downloadFile() {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'assets/files/AI.pdf');
-    link.setAttribute('download', 'AI.pdf');
+    link.setAttribute('href', 'assets/files/cognitivePsych.pdf');
+    link.setAttribute('download', 'cognitivePsych.pdf');
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -25,7 +25,7 @@ export class AIComponent implements OnInit {
   openFile() {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'assets/files/AI.pdf');
+    link.setAttribute('href', 'assets/files/cognitivePsych.pdf');
     document.body.appendChild(link);
     link.click();
     link.remove();
