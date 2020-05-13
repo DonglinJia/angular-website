@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { PlanService } from '../../../services/plan/plan.service';
-import {GridApi, GridOptions, GridReadyEvent, ModelUpdatedEvent} from 'ag-grid-community';
-import {Observable} from 'rxjs';
+import { GridOptions, GridReadyEvent } from 'ag-grid-community';
 import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
@@ -209,7 +208,7 @@ export class ToDoListComponent implements OnInit {
     }
   `],
 })
-export class PopMessageComponent implements OnInit{
+export class PopMessageComponent implements OnInit {
   public message: string;
 
   constructor(private planService: PlanService) {}
