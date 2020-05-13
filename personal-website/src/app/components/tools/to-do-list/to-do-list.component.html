@@ -1,26 +1,42 @@
-<div class="height-auto background-color-light-yellow color-black border-radius-5" style="width: auto">
+<div class="background-color-light-yellow color-black border-radius-5" style="width: auto; max-height: 60vh">
+  <div class="text-align-last-center font-size-20 margin-bottom-10 padding-top-15">
+    Plan for {{ selectDate }}
+  </div>
+  <div>
     <ag-grid-angular
-      style="height: 200px;"
-      class="ag-theme-alpine color-black background-color-light-yellow border-radius-5"
+      style="height: 400px"
+      class="ag-theme-alpine-dark border-radius-5"
       [rowData]="data"
       [columnDefs]="columnDefs"
       [gridOptions]="gridOptions"
       (gridSizeChanged)="resizeColumns($event)"
-    >
-    </ag-grid-angular>
-    <div *ngIf="showAddItem" fxLayout="column" fxLayoutGap="10px" class="content-center">
-      <div>Content: <input type="text" [(ngModel)]="content"></div>
-      <div>Priority: <input type="number" [(ngModel)]="priority"></div>
-      <div>Date: <input type="date" [(ngModel)]="time"></div>
+      [enableCellChangeFlash]="true"
+    ></ag-grid-angular>
+    <div *ngIf="showAddItem"fxLayout="column" fxLayoutGap="10px">
+      <div fxLayout="column" fxLayoutGap="10px" class="margin-left-20">
+        <div>Content: <input type="text" [(ngModel)]="content"></div>
+        <div>Priority: <input type="number" [(ngModel)]="priority"></div>
+        <div>Date: <input type="date" [(ngModel)]="time"></div>
+      </div>
       <div>
         <button mat-button (click)="updatePlan()">Submit</button>
         <button mat-button (click)="clearPlan()">Clear</button>
         <button mat-button (click)="cancelPlan()">Cancel</button>
       </div>
     </div>
-  <div *ngIf="!showAddItem">
-    <button mat-button (click)="getPlan()">View</button>
-    <button mat-button (click)="addPlan()">Add</button>
-    <button mat-button (click)="deletePlan()">Delete</button>
+    <div *ngIf="showDeleteItem">
+      <div>Please enter delete item Id: <input type="text"[(ngModel)]="deleteId"></div>
+      <div>
+        <button mat-button (click)="deleteItem()">Confirm</button>
+        <button mat-button (click)="getPlan()">Back</button>
+      </div>
+    </div>
+    <div *ngIf="!showAddItem && !showDeleteItem">
+      <button mat-button (click)="addPlan()">Add</button>
+      <button mat-button (click)="deletePlan()">Delete</button>
+      <button *ngIf="previousData.length !== 0" mat-button (click)="showPreviousPlan()">View Previous</button>
+      <button *ngIf="previousData.length !== 0" mat-button (click)="deletePreviousPlan()">Delete Previous Plan</button>
+      <button mat-button (click)="getPlan()">Back</button>
+    </div>
   </div>
 </div>

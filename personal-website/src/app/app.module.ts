@@ -28,9 +28,10 @@ import { AlgorithmComponent } from './components/courses/algorithm/algorithm.com
 import { GraphComponent } from './components/courses/graph/graph.component';
 import { AIComponent } from './components/courses/ai/ai.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ToDoListComponent } from './components/tools/to-do-list/to-do-list.component';
+import { PopMessageComponent, ToDoListComponent} from './components/tools/to-do-list/to-do-list.component';
 import { AgGridModule } from 'ag-grid-angular';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 const appRoutes: Routes = [
@@ -71,7 +72,8 @@ const appRoutes: Routes = [
     AlgorithmComponent,
     GraphComponent,
     AIComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    PopMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +89,8 @@ const appRoutes: Routes = [
     FlexModule,
     HttpClientModule,
     AgGridModule.withComponents([]),
-    FormsModule
+    FormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

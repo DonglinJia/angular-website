@@ -23,6 +23,7 @@
     "@angular/platform-browser": "~9.1.4",
     "@angular/platform-browser-dynamic": "~9.1.4",
     "@angular/router": "~9.1.4",
+    "@material/snackbar": "^6.0.0",
     "ag-grid-angular": "^23.1.0",
     "ag-grid-community": "^23.1.0",
     "angular-mailto": "^0.1.0",
