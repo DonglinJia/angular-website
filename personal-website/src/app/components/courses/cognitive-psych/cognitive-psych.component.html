@@ -1,13 +1,80 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Cognitive Psychology</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <li>Update DAILY, currently taking in this term</li>
-    <li>Documented lecture notes for Cognitive Psychology</li>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button (click)="openFile()">Preview</button>
-    <button mat-button (click)="downloadFile()">Download</button>
-  </mat-card-actions>
-</mat-card>
+<div fxLayout="column" fxLayoutGap="20px">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Cognitive Psychology Introduction</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <li>Documented lecture notes for Cognitive Psychology</li>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="openFile('intro')">Preview</button>
+      <button mat-button (click)="downloadFile('intro')">Download</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Attention</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <li>Introduction about attention in cognitive psychology</li>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="openFile('attention')">Preview</button>
+      <button mat-button (click)="downloadFile('attention')">Download</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Brain</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <li>Introduction brain in cognitive psychology</li>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="openFile('brain')">Preview</button>
+      <button mat-button (click)="downloadFile('brain')">Download</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Decision</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <li>Introduction decision-making in cognitive psychology</li>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="openFile('decision')">Preview</button>
+      <button mat-button (click)="downloadFile('decision')">Download</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Language</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <li>Introduction language in cognitive psychology</li>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="openFile('language')">Preview</button>
+      <button mat-button (click)="downloadFile('language')">Download</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Memory Processing</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <li>Introduction memory processing in cognitive psychology</li>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="openFile('memory-processing')">Preview</button>
+      <button mat-button (click)="downloadFile('memory-processing')">Download</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

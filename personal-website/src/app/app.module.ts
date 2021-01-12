@@ -33,6 +33,7 @@ import { AgGridModule } from 'ag-grid-angular';
 import { FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CognitivePsychComponent } from './components/courses/cognitive-psych/cognitive-psych.component';
+import { PerceptionComponent } from './components/courses/perception/perception.component';
 
 
 const appRoutes: Routes = [
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
       { path: 'Algo', component: AlgorithmComponent },
       { path: 'graph', component: GraphComponent },
       { path: 'AI', component: AIComponent },
-      { path: 'CogPsych', component: CognitivePsychComponent }
+      { path: 'CogPsych', component: CognitivePsychComponent },
+      { path: 'perceptions', component: PerceptionComponent }
     ]
   },
   { path: 'learning', component: LearningComponent },
@@ -76,7 +78,8 @@ const appRoutes: Routes = [
     AIComponent,
     ToDoListComponent,
     PopMessageComponent,
-    CognitivePsychComponent
+    CognitivePsychComponent,
+    PerceptionComponent
   ],
   imports: [
     BrowserModule,
