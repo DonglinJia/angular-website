@@ -14,8 +14,7 @@ export class HomeComponent implements OnInit {
   currentYear: string;
   major: string;
   graduateYear: number;
-  interests: string;
-  workExperience: string;
+  interests: Array<string>;
   bikeURL: string;
   runningURL: string;
   swimmingURL: string;
@@ -27,16 +26,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.name = 'Donglin Jia';
-    this.currentYear = 'third';
+    this.currentYear = 'forth';
     this.major = 'Computer Science';
     this.graduateYear = 2022;
-    this.interests = 'I am really interested in Artificial intelligence, network security and web design. ';
-    // this.workExperience = 'I used to work for RBC Capital Markets technology global equity trading team.' +
-    //   'Worked with 12 automation developers, developed and designed automation framework by using Selenium automation tools. ' +
-    //   'In my second work term, I worked as an innovation engineer for Scotiabank FactoryU.' +
-    //   ' Developed web application by using Angular and Django.' +
-    //   ' Implemented Front-End components by using various libraries, including ag-grid and chart.js. ' +
-    //   'Creating endpoint and designing proper data structure in Django';
+    this.interests = ['Machine Learning', 'Web implementation', 'Security', 'Automation testing'];
     this.bikeURL = 'assets/img/bike.jpg';
     this.runningURL = 'assets/img/running.jpg';
     this.skiingURL = 'assets/img/skiing.png';

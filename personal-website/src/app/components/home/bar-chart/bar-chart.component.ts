@@ -35,7 +35,7 @@ export class BarChartComponent implements OnInit {
       series: [
         {
           name: 'basic',
-          data: [100, 100, 90, 70, 60, 75, 40]
+          data: [80, 90, 90, 90, 90, 85, 85, 80, 95, 40]
         }
       ],
       chart: {
@@ -53,10 +53,13 @@ export class BarChartComponent implements OnInit {
       xaxis: {
         categories: [
           'TensorFlow',
+          'Pytorch',
+          'React',
           'Angular',
           'Django',
-          'Typescript',
-          'C++',
+          'GAN',
+          'Auto-encoder',
+          'OpenCV',
           'Python',
           'C'
         ]

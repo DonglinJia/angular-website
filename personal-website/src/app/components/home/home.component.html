@@ -6,19 +6,36 @@
       <div>My name is {{ this.name }}, {{ this.currentYear }} year {{ this.major }} student studying at University of Waterloo.
       Expected graduate in {{ this.graduateYear }}. </div>
       <h4>Personal Interests:</h4>
-      <div>{{this.interests}}</div>
+      <div *ngFor="let interest of this.interests">
+        <li>{{interest}}</li>
+        </div>
       <h4>Work Experiences:</h4>
       <div>
-        <ul>Scotiabank FactoryU
-          <li>Worked as Innovation Engineer (Full Stack Developer)</li>
+        <ul><div class="text-bold">Machine Learning Coop</div>
+          <li>Lead DNA encoder project, coin detection project, and 2D image reconstruction project</li>
+          <li>Implemented and refined neural networks (written by Pytorch). Used CUDA and GPU for training acceleration</li>
+          <li>Applied GAN and Autoencoder for DNA encoder project. The well-trained model is able to generate DNA sequences with 98% accuracy and reconstructed images with loss of less than 5%</li>
+          <li>Applied OpenCV for coin detection project. Applied ODM for 2D image reconstruction.</li>
+          <li>Used Docker and conda for different environment settings</li>
+        </ul>
+        <ul><div class="text-bold">App implementation Coop</div>
+          <li>Worked as Software developer in Scotiabank</li>
+          <li>Worked with senior production team to provide customer production level application</li>
+          <li>Applied JWE and AES encryption algorithm to encrypted incoming data; Implemented JWT for digital signature and verification by using Node.js/express.js </li>
+          <li>Lead, designed and implemented frontend layout using ReactJS </li>
+          <li>Successfully resolved Cycle Dependency issues; Managed to finish address auto complete task by using Google Maps API in React side</li>
+          <li>Maintained test coverage by using Jest and Chai </li>
+        </ul>
+        <ul><div class="text-bold">Web implementation Coop</div>
+          <li>Worked as Innovation Engineer in Scotiabank</li>
           <li>Implemented and developed internal platforms for Scotiabank Capital Markets</li>
           <li>Developed web application by using Angular and Django REST framework</li>
           <li>Created Front-End components and Back-End endpoints. Reorganized and designed Data structure for projects</li>
           <li>Applied service for data binding/transfer. Managed state changes by using Redux.</li>
           <li>Successfully connected to various endpoints by using Django model to overcome proxy issues</li>
         </ul>
-        <ul>RBC Capital Markets Technology
-          <li>Worked as Quality Assurance</li>
+        <ul><div class="text-bold">Test automation Coop</div>
+          <li>Worked as test automation team in Royal Bank of Canada</li>
           <li>Developed and designed automation testing framework by using Selenium (Java based) and Cucumber.</li>
           <li>Increasing automation testing speed by 17%, improved automation testing framework accuracy</li>
         </ul>
