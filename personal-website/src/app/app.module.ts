@@ -47,7 +47,7 @@ const appRoutes: Routes = [
       { path: 'graph', component: GraphComponent },
       { path: 'AI', component: AIComponent },
       { path: 'CogPsych', component: CognitivePsychComponent },
-      { path: 'perceptions', component: PerceptionComponent }
+      { path: 'Perception', component: PerceptionComponent }
     ]
   },
   { path: 'learning', component: LearningComponent },
