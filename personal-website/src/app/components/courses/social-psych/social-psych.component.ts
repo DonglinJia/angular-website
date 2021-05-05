@@ -12,7 +12,7 @@ export class SocialPsychComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.prefix = 'assets/files/social-psychology/';
+    this.prefix = 'assets/files/';
   }
 
   downloadFile(fileName) {
