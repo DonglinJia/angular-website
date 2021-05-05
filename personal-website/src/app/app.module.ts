@@ -34,6 +34,7 @@ import { FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CognitivePsychComponent } from './components/courses/cognitive-psych/cognitive-psych.component';
 import { PerceptionComponent } from './components/courses/perception/perception.component';
+import { SocialPsychComponent } from './components/courses/social-psych/social-psych.component';
 
 
 const appRoutes: Routes = [
@@ -47,7 +48,8 @@ const appRoutes: Routes = [
       { path: 'graph', component: GraphComponent },
       { path: 'AI', component: AIComponent },
       { path: 'CogPsych', component: CognitivePsychComponent },
-      { path: 'Perception', component: PerceptionComponent }
+      { path: 'Perception', component: PerceptionComponent },
+      { path: 'SocialPsych', component: SocialPsychComponent }
     ]
   },
   { path: 'learning', component: LearningComponent },
@@ -79,7 +81,8 @@ const appRoutes: Routes = [
     ToDoListComponent,
     PopMessageComponent,
     CognitivePsychComponent,
-    PerceptionComponent
+    PerceptionComponent,
+    SocialPsychComponent
   ],
   imports: [
     BrowserModule,
