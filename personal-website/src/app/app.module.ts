@@ -55,11 +55,11 @@ const appRoutes: Routes = [
     ]
   },
   { path: 'learning', component: LearningComponent },
-  { path: 'tools', component: ToolsComponent,
-    children: [
-      { path: 'todo', component: ToDoListComponent }
-    ]
-  }
+  // { path: 'tools', component: ToolsComponent,
+  //   children: [
+  //     { path: 'todo', component: ToDoListComponent }
+  //   ]
+  // }
 ];
 
 @NgModule({
