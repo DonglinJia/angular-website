@@ -35,6 +35,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CognitivePsychComponent } from './components/courses/cognitive-psych/cognitive-psych.component';
 import { PerceptionComponent } from './components/courses/perception/perception.component';
 import { SocialPsychComponent } from './components/courses/social-psych/social-psych.component';
+import { NetworkComponent } from './components/courses/network/network.component';
 
 
 const appRoutes: Routes = [
@@ -49,7 +50,8 @@ const appRoutes: Routes = [
       { path: 'AI', component: AIComponent },
       { path: 'CogPsych', component: CognitivePsychComponent },
       { path: 'Perception', component: PerceptionComponent },
-      { path: 'SocialPsych', component: SocialPsychComponent }
+      { path: 'SocialPsych', component: SocialPsychComponent },
+      { path: 'Network', component: NetworkComponent }
     ]
   },
   { path: 'learning', component: LearningComponent },
@@ -82,7 +84,8 @@ const appRoutes: Routes = [
     PopMessageComponent,
     CognitivePsychComponent,
     PerceptionComponent,
-    SocialPsychComponent
+    SocialPsychComponent,
+    NetworkComponent
   ],
   imports: [
     BrowserModule,
