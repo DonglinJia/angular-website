@@ -111,4 +111,51 @@ export class UtilityService {
     ];
   }
 
+  getPersonnelList() {
+    return [
+      {
+        title: 'Job Performance',
+        intro: 'Introduce the definition of job performance. It mainly emphasizes the job performance is not the result or ' +
+          'outcome but the behaviour of employers ',
+        url: 'assets/files/job_performance.pdf'
+      },
+      {
+        title: 'Predictor',
+        intro: 'Introduce the predictor of job performance. It mainly emphasizes the how predictors ' +
+          'constructed for different types of positions.',
+        url: 'assets/files/predictor.pdf'
+      },
+      {
+        title: 'Prediction Methods',
+        intro: 'Introduce different prediction methods. It mainly introduce the pros and cons for different prediction methods.',
+        url: 'assets/files/predictor_methods.pdf'
+      },
+      {
+        title: 'Validity',
+        intro: 'Introduce the validity of each predictor. It mainly emphasizes the importance of validity in different predictors.',
+        url: 'assets/files/validity.pdf'
+      },
+      {
+        title: 'Performance Appraisal',
+        intro: 'Introduce the Performance Appraisal.',
+        url: 'assets/files/performance_appraisal.pdf'
+      },
+      {
+        title: 'Job Recruitment',
+        intro: 'Introduce the Job Recruitment. It mainly focus on different methods of recruitment, structured interview, for example. ' +
+          'It also compares the pros and cons for different methods. ',
+        url: 'assets/files/job_performance.pdf'
+      },
+      {
+        title: 'Decision Making for Recruitment',
+        intro: 'Introduce the after recruitment, how the decision has been made for the different positions.',
+        url: 'assets/files/selection_decision_making.pdf'
+      },
+      {
+        title: 'Training after recruitment',
+        intro: 'Introduce different training methods to help new comers to get on board easily.',
+        url: 'assets/files/job_performance.pdf'
+      },
+    ];
+  }
 }

@@ -36,6 +36,7 @@ import { CognitivePsychComponent } from './components/courses/cognitive-psych/co
 import { PerceptionComponent } from './components/courses/perception/perception.component';
 import { SocialPsychComponent } from './components/courses/social-psych/social-psych.component';
 import { NetworkComponent } from './components/courses/network/network.component';
+import { PersonnelComponent } from './components/courses/personnel/personnel.component';
 
 
 const appRoutes: Routes = [
@@ -51,7 +52,8 @@ const appRoutes: Routes = [
       { path: 'CogPsych', component: CognitivePsychComponent },
       { path: 'Perception', component: PerceptionComponent },
       { path: 'SocialPsych', component: SocialPsychComponent },
-      { path: 'Network', component: NetworkComponent }
+      { path: 'Network', component: NetworkComponent },
+      { path: 'Personnel', component: PersonnelComponent }
     ]
   },
   { path: 'learning', component: LearningComponent },
@@ -85,7 +87,8 @@ const appRoutes: Routes = [
     CognitivePsychComponent,
     PerceptionComponent,
     SocialPsychComponent,
-    NetworkComponent
+    NetworkComponent,
+    PersonnelComponent
   ],
   imports: [
     BrowserModule,

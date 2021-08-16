@@ -1,25 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import {UtilityService} from '../../../services/utility.service';
+import { UtilityService } from '../../../services/utility.service';
 
-export interface Algorithm {
+export interface Topics {
   title: string;
   intro: string;
   url: string;
 }
 
 @Component({
-  selector: 'app-algorithm',
-  templateUrl: './algorithm.component.html',
-  styleUrls: ['./algorithm.component.scss']
+  selector: 'app-personnel',
+  templateUrl: './personnel.component.html',
+  styleUrls: ['./personnel.component.scss']
 })
+export class PersonnelComponent implements OnInit {
 
-export class AlgorithmComponent implements OnInit {
-
-  public algos: Algorithm[];
-  constructor(private utilityservice: UtilityService) { }
+  public topics: Topics[];
+  constructor(private utilityService: UtilityService) { }
 
   ngOnInit(): void {
-    this.algos = this.utilityservice.getAlgolist();
+    this.topics = this.utilityService.getPersonnelList();
   }
 
   downloadFile(url: string) {
