@@ -136,8 +136,10 @@ export class UtilityService {
         url: 'assets/files/validity.pdf'
       },
       {
-        title: 'Performance Appraisal',
-        intro: 'Introduce the Performance Appraisal.',
+        title: 'Performance Appraisal and Job Analysis',
+        intro: 'Introduce the Performance Appraisal and Job Analysis. It mainly focus on analysis different types of job and creating ' +
+        'a "marking scheme" for each individual job. It also introduces the measurements error during the job analysis ' +
+          'and how to cope with those.' ,
         url: 'assets/files/performance_appraisal.pdf'
       },
       {
