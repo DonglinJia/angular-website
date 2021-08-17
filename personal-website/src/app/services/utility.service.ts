@@ -4,9 +4,22 @@ import {PopupData} from '../components/home/popup/popup.component';
 @Injectable({
   providedIn: 'root'
 })
+
 export class UtilityService {
 
   constructor() { }
+
+  getCompanyImgURL(type: string) {
+    if (type === 'sugon') {
+      return 'assets/img/sugon.jpeg';
+    } else if (type === 'scotiabank') {
+      return 'assets/img/Scotiabank.jpeg';
+    } else if (type === 'rbc') {
+      return 'assets/img/rbc.jpeg';
+    } else if (type === 'pkelmer') {
+      return 'assets/img/PerkinElmer.jpeg';
+    }
+  }
 
   getSportsData(type: string): PopupData {
     if (type === 'bike') {

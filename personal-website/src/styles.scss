@@ -58,6 +58,14 @@
   margin-bottom: 10px !important;
 }
 
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.margin-right-5 {
+  margin-right: 5px !important;
+}
+
 .margin-right-15 {
   margin-right: 15px !important;
 }
@@ -84,6 +92,10 @@
 }
 
 // Font Global SCSS
+.font-size-12 {
+  font-size: 12px !important;
+}
+
 .font-size-14 {
   font-size: 14px !important;
 }
@@ -103,6 +115,10 @@
 // height and width SCSS
 .width-15vh {
   width: 15vh !important;
+}
+
+.width-17vh {
+  width: 17vh !important;
 }
 
 .width-100vh {
@@ -129,6 +145,10 @@
   height: 10vh !important;
 }
 
+.height-15vh {
+  height: 15vh !important;
+}
+
 .height-5vh {
   height: 5vh !important;
 }
@@ -140,6 +160,14 @@
 // Other Style
 .border-radius-5 {
   border-radius: 5px;
+}
+
+.border-black {
+  border: 1px solid gainsboro;
+}
+
+.space-center {
+  justify-content: center;
 }
 
 .space-between {
@@ -207,6 +235,11 @@
   height: 42px !important;
   width: 42px !important;
   background: transparent;
+}
+
+.underline-animation {
+  transform: scale(0);
+  transform-origin: center;
 }
 
 html, body { height: 100%; }

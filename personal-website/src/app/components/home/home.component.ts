@@ -22,6 +22,11 @@ export class HomeComponent implements OnInit {
   skiingURL: string;
   snowboardURL: string;
 
+  sugonURL: string;
+  scotiabankURL: string;
+  rbcURL: string;
+  perkinElmerURL: string;
+
   constructor(private utilityService: UtilityService, public popup: MatDialog) { }
 
   ngOnInit(): void {
@@ -36,6 +41,10 @@ export class HomeComponent implements OnInit {
     this.swimmingURL = 'assets/img/swimming.jpeg';
     this.badmintonURL = 'assets/img/badminton.jpg';
     this.snowboardURL = 'assets/img/snowboarding.jpeg';
+    this.sugonURL = this.utilityService.getCompanyImgURL('sugon');
+    this.scotiabankURL = this.utilityService.getCompanyImgURL('scotiabank');
+    this.rbcURL = this.utilityService.getCompanyImgURL('rbc');
+    this.perkinElmerURL = this.utilityService.getCompanyImgURL('pkelmer');
   }
 
   openPopup(type: string) {

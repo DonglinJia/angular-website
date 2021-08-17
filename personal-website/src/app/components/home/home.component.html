@@ -10,36 +10,81 @@
         <li>{{interest}}</li>
         </div>
       <h4>Work Experiences:</h4>
-      <div>
-        <ul><div class="text-bold">Machine Learning Coop</div>
-          <li>Led DNA storage project, coin detection project, and 2D image reconstruction project</li>
-          <li>Implemented and refined neural networks (written by Pytorch). Used CUDA and GPU for training acceleration</li>
-          <li>Applied GAN and Autoencoder for DNA encoder project. The well-trained model is able to generate DNA sequences with 98% accuracy and reconstructed images with loss of less than 5%</li>
-          <li>Applied OpenCV for coin detection project. Applied ODM for 2D image reconstruction.</li>
-          <li>Used Docker and conda for different environment settings</li>
-        </ul>
-        <ul><div class="text-bold">App implementation Coop</div>
-          <li>Worked as Software developer in Scotiabank</li>
-          <li>Worked with senior production team to provide customer production level application</li>
-          <li>Applied JWE and AES encryption algorithm to encrypted incoming data; Implemented JWT for digital signature and verification by using Node.js/express.js </li>
-          <li>Led, designed and implemented frontend layout using ReactJS </li>
-          <li>Successfully resolved Cycle Dependency issues; Managed to finish address auto complete task by using Google Maps API in React side</li>
-          <li>Maintained test coverage by using Jest and Chai </li>
-        </ul>
-        <ul><div class="text-bold">Web implementation Coop</div>
-          <li>Worked as Innovation Engineer in Scotiabank</li>
-          <li>Implemented and developed internal platforms for Scotiabank Capital Markets</li>
-          <li>Developed web application by using Angular and Django REST framework</li>
-          <li>Created Front-End components and Back-End endpoints. Reorganized and designed Data structure for projects</li>
-          <li>Applied service for data binding/transfer. Managed state changes by using Redux.</li>
-          <li>Successfully connected to various endpoints by using Django model to overcome proxy issues</li>
-        </ul>
-        <ul><div class="text-bold">Test automation Coop</div>
-          <li>Worked as test automation team in Royal Bank of Canada</li>
-          <li>Developed and designed automation testing framework by using Selenium (Java based) and Cucumber.</li>
-          <li>Increasing automation testing speed by 17%, improved automation testing framework accuracy</li>
-        </ul>
+      <div class="padding-10 column-flex" fxLayout="column" fxLayoutGap="20px">
+
+        <div class="row-flex" fxLayout="row" >
+          <div class="row-flex" fxFlex="50">
+            <img class="height-10vh width-17vh border-radius-5 margin-right-5 border-black"
+                 [src]="this.perkinElmerURL" alt="" role="button" (click)="openPopup('swim')">
+            <div class="column-flex space-center">
+              <p class="font-size-14">ML Engineer</p>
+              <p class="font-size-14">Pytorch</p>
+              <a class="font-size-14" role="button" (click)="openPopup('swim')">More Details...</a>
+            </div>
+          </div>
+          <div class="row-flex">
+            <img class="height-10vh width-10vh border-radius-5 margin-right-5 border-black"
+                 [src]="this.sugonURL" alt="" role="button" (click)="openPopup('bike')">
+            <div class="column-flex space-center">
+              <p class="font-size-14">ML Engineer</p>
+              <p class="font-size-14">GAN, AE, OpenCV, Pytorch, Tensorflow</p>
+              <a class="font-size-14" role="button" (click)="openPopup('swim')">More Details...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row-flex" fxLayout="row" >
+          <div class="row-flex" fxFlex="50">
+            <img class="height-10vh width-15vh border-radius-5 margin-right-5"
+                 [src]="this.scotiabankURL" alt="" role="button" (click)="openPopup('run')">
+            <div class="column-flex space-center">
+              <p class="font-size-14">Software Developer + Innovation Engineer</p>
+              <p class="font-size-14">React, Angular, Django, PostgreSQL</p>
+              <a class="font-size-14" role="button" (click)="openPopup('swim')">More Details...</a>
+            </div>
+          </div>
+          <div class="row-flex">
+            <img class="height-10vh width-15vh border-radius-5 margin-right-5"
+                 [src]="this.rbcURL" alt="" role="button" (click)="openPopup('swim')">
+            <div class="column-flex space-center">
+              <p class="font-size-14">Automation Engineer</p>
+              <p class="font-size-14">Selenium, Cucumber</p>
+              <a class="font-size-14" role="button" (click)="openPopup('swim')">More Details...</a>
+            </div>
+          </div>
+        </div>
       </div>
+<!--      <div>-->
+<!--        <ul><div class="text-bold">Machine Learning Coop</div>-->
+<!--          <li>Worked as Machine Learning Engineer in Sugon</li>-->
+<!--          <li>Led DNA storage project, coin detection project, and 2D image reconstruction project</li>-->
+<!--          <li>Implemented and refined neural networks (written by Pytorch). Used CUDA and GPU for training acceleration</li>-->
+<!--          <li>Applied GAN and Autoencoder for DNA encoder project. The well-trained model is able to generate DNA sequences with 98% accuracy and reconstructed images with loss of less than 5%</li>-->
+<!--          <li>Applied OpenCV for coin detection project. Applied ODM for 2D image reconstruction.</li>-->
+<!--          <li>Used Docker and conda for different environment settings</li>-->
+<!--        </ul>-->
+<!--        <ul><div class="text-bold">App implementation Coop</div>-->
+<!--          <li>Worked as Software developer in Scotiabank</li>-->
+<!--          <li>Worked with senior production team to provide customer production level application</li>-->
+<!--          <li>Applied JWE and AES encryption algorithm to encrypted incoming data; Implemented JWT for digital signature and verification by using Node.js/express.js </li>-->
+<!--          <li>Led, designed and implemented frontend layout using ReactJS </li>-->
+<!--          <li>Successfully resolved Cycle Dependency issues; Managed to finish address auto complete task by using Google Maps API in React side</li>-->
+<!--          <li>Maintained test coverage by using Jest and Chai </li>-->
+<!--        </ul>-->
+<!--        <ul><div class="text-bold">Web implementation Coop</div>-->
+<!--          <li>Worked as Innovation Engineer in Scotiabank</li>-->
+<!--          <li>Implemented and developed internal platforms for Scotiabank Capital Markets</li>-->
+<!--          <li>Developed web application by using Angular and Django REST framework</li>-->
+<!--          <li>Created Front-End components and Back-End endpoints. Reorganized and designed Data structure for projects</li>-->
+<!--          <li>Applied service for data binding/transfer. Managed state changes by using Redux.</li>-->
+<!--          <li>Successfully connected to various endpoints by using Django model to overcome proxy issues</li>-->
+<!--        </ul>-->
+<!--        <ul><div class="text-bold">Test automation Coop</div>-->
+<!--          <li>Worked as test automation team in Royal Bank of Canada</li>-->
+<!--          <li>Developed and designed automation testing framework by using Selenium (Java based) and Cucumber.</li>-->
+<!--          <li>Increasing automation testing speed by 17%, improved automation testing framework accuracy</li>-->
+<!--        </ul>-->
+<!--      </div>-->
     </div>
   </div>
   <div class="row-flex margin-top-30 second-row">
@@ -83,7 +128,7 @@
       </div>
     </div>
   </div>
-  <div class="row-flex margin-top-30 third-row">
+  <div class="row-flex margin-top-30 third-row margin-bottom-30">
     <div class="mat-card border-radius-5 flex-1-1-50 personal-interest">
       <app-bar-chart></app-bar-chart>
     </div>

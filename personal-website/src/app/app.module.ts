@@ -37,7 +37,7 @@ import { PerceptionComponent } from './components/courses/perception/perception.
 import { SocialPsychComponent } from './components/courses/social-psych/social-psych.component';
 import { NetworkComponent } from './components/courses/network/network.component';
 import { PersonnelComponent } from './components/courses/personnel/personnel.component';
-import {MatIconModule} from '@angular/material/icon';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 
 const appRoutes: Routes = [
@@ -107,7 +107,7 @@ const appRoutes: Routes = [
     AgGridModule.withComponents([]),
     FormsModule,
     MatSnackBarModule,
-    MatIconModule
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
