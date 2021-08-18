@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import {PopupData} from '../components/home/popup/popup.component';
+import { PopupData } from '../components/home/popup/popup.component';
+import { WorkPopupData } from '../components/home/work-pop-up/work-pop-up.component';
 
 @Injectable({
   providedIn: 'root'
@@ -172,5 +173,71 @@ export class UtilityService {
         url: 'assets/files/job_performance.pdf'
       },
     ];
+  }
+
+  getWorkData(company: string): WorkPopupData {
+    if (company === 'perkin') {
+      return {
+        name: 'Machine Learning Engineer Intern',
+        duration: 'September 2021 -- December 2021',
+        location: 'Waterloo, Ontario, Canada',
+        jobResponsibility: [
+          'N/A'
+        ],
+        companyURL: 'https://www.perkinelmer.com/'
+      };
+    } else if (company === 'sugon') {
+      return {
+        name: 'Machine Learning Engineer Intern',
+        duration: 'January 2021 -- April 2021',
+        location: 'QingDao, ShanDong, China',
+        jobResponsibility: [
+          '- Led DNA storage project, coin detection project, and 2D image reconstruction project',
+          '- Implemented and refined neural networks (written by Pytorch). Used CUDA and GPU for training acceleration',
+          '- Applied GAN and Autoencoder for DNA encoder project. The well-trained model is able to generate DNA sequences with 98% ' +
+          'accuracy and reconstructed images with loss of less than 5%',
+          '- Applied OpenCV for coin detection project. Applied ODM for 2D image reconstruction',
+          '- Used Docker and conda for different environment settings'
+        ],
+        companyURL: 'https://www.sugon.com/en'
+      };
+    } else if (company === 'scotia') {
+      return {
+        name: 'Software Developer Intern + Innovation Engineer Intern',
+        duration: 'September 2020 -- December 2020 + September 2019 -- April 2020',
+        location: 'Waterloo, Ontario, Canada',
+        jobResponsibility: [
+          'Software Developer:',
+          '- Worked with senior production team to provide customer production level application',
+          '- Applied JWE and AES encryption algorithm to encrypted incoming data; Implemented JWT for digital signature ' +
+          'and verification by using Node.js/express.js',
+          '- Led, designed and implemented frontend layout using ReactJS',
+          '- Successfully resolved Cycle Dependency issues; Managed to finish address auto complete task by ' +
+          'using Google Maps API in React side',
+          '- Maintained test coverage by using Jest and Chai',
+          ' ',
+          ' ',
+          'Innovation Developer:',
+          '- Implemented and developed internal platforms for Scotiabank Capital Markets',
+          '- Developed web application by using Angular and Django REST framework',
+          '- Created Front-End components and Back-End endpoints. Reorganized and designed Data structure for projects',
+          '- Applied service for data binding/transfer. Managed state changes by using Redux',
+          '- Successfully connected to various endpoints by using Django model to overcome proxy issues'
+        ],
+        companyURL: 'https://www.scotiabank.com/ca/en/about.html'
+      };
+    } else if (company === 'rbc') {
+      return {
+        name: 'Technical Systems Analyst Intern',
+        duration: 'September 2018 -- December 2019',
+        location: 'Toronto, Ontario, Canada',
+        jobResponsibility: [
+          '- Worked as test automation engineer in Royal Bank of Canada',
+          '- Developed and designed automation testing framework by using Selenium (Java based) and Cucumber',
+          '- Increasing automation testing speed by 17%, improved automation testing framework accuracy'
+        ],
+        companyURL: 'https://www.rbcroyalbank.com/'
+      };
+    }
   }
 }

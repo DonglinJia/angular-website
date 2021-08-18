@@ -38,6 +38,7 @@ import { SocialPsychComponent } from './components/courses/social-psych/social-p
 import { NetworkComponent } from './components/courses/network/network.component';
 import { PersonnelComponent } from './components/courses/personnel/personnel.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { WorkPopUpComponent } from './components/home/work-pop-up/work-pop-up.component';
 
 
 const appRoutes: Routes = [
@@ -89,7 +90,8 @@ const appRoutes: Routes = [
     PerceptionComponent,
     SocialPsychComponent,
     NetworkComponent,
-    PersonnelComponent
+    PersonnelComponent,
+    WorkPopUpComponent
   ],
   imports: [
     BrowserModule,

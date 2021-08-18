@@ -46,6 +46,10 @@
 }
 
 // Margin Global SCSS
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
 .margin-top-15 {
   margin-top: 15px !important;
 }
@@ -114,8 +118,8 @@
 
 // height and width SCSS
 .width-15vh {
-  width: 15vh !important;
-}
+   width: 15vh !important;
+ }
 
 .width-17vh {
   width: 17vh !important;
@@ -200,6 +204,10 @@
 
 .text-bold {
   font-weight: bold;
+}
+
+.text-regular {
+  font-weight: normal;
 }
 // Flex:
 .flex-column {

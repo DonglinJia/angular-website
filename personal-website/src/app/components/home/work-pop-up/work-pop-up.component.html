@@ -1,0 +1,29 @@
+<div>
+  <ul class="padding-10" style="list-style-type:none">
+    <div class="text-align-last-center text-bold margin-bottom-10 font-size-18">{{ this.data.name }}</div>
+    <mat-divider class="margin-bottom-10 margin-top-10"></mat-divider>
+    <li class="font-size-16 text-bold">Duration: <div class="text-regular">
+      {{ this.data.duration }}
+    </div></li>
+    <mat-divider class="margin-bottom-10 margin-top-10"></mat-divider>
+    <li class="font-size-16 text-bold">Work Location:
+      <div class="text-regular">
+      {{ this.data.location }}
+      </div>
+    </li>
+    <mat-divider class="margin-bottom-10 margin-top-10"></mat-divider>
+    <li class="font-size-16 margin-bottom-10 text-bold">Job Responsibility:
+      <div *ngFor="let job of this.data.jobResponsibility">
+        <p class="font-size-16 text-regular"> {{ job }}</p>
+      </div>
+    </li>
+    <mat-divider class="margin-bottom-10 margin-top-10"></mat-divider>
+    <li class="font-size-16 text-bold"> About Company: <div class="text-regular">
+      <a href="{{this.data.companyURL}}" target="_blank">{{ this.data.companyURL }}</a>
+    </div></li>
+    <mat-divider class="margin-bottom-10 margin-top-10"></mat-divider>
+  </ul>
+  <div>
+    <button mat-button class="float-right" (click)="onNoClick()">Close</button>
+  </div>
+</div>
