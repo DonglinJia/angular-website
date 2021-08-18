@@ -1,7 +1,3 @@
-a {
-  color: black !important;
-}
-
 .external-link {
   margin-right: 15px !important;
 }
@@ -33,4 +29,28 @@ a {
     display: flex;
     flex-direction: column;
   }
+}
+
+a {
+  color: black !important;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  //position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
