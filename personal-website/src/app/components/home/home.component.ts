@@ -48,6 +48,7 @@ export class HomeComponent implements OnInit {
     this.scotiabankURL = this.utilityService.getCompanyImgURL('scotiabank');
     this.rbcURL = this.utilityService.getCompanyImgURL('rbc');
     this.perkinElmerURL = this.utilityService.getCompanyImgURL('pkelmer');
+    console.log('hello');
   }
 
   openPopup(type: string) {
