@@ -182,7 +182,12 @@ export class UtilityService {
         duration: 'September 2021 -- December 2021',
         location: 'Waterloo, Ontario, Canada',
         jobResponsibility: [
-          'N/A'
+          '- Worked with senior machine learning engineer for chemical words extractor project',
+          '- Built characterwise LSTM/biLSTM model from scratch, applied different strategies for pre/post processing. ' +
+          'Implemented characterwise variational Autoencoder and seqGAN for new text generation',
+          '- Applied active learning approach to boost up data labelling process, and transfer learning approach for future ' +
+          'incoming data training',
+          '- Wrapped project by using config file'
         ],
         companyURL: 'https://www.perkinelmer.com/'
       };
