@@ -39,6 +39,7 @@ import { NetworkComponent } from './components/courses/network/network.component
 import { PersonnelComponent } from './components/courses/personnel/personnel.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { WorkPopUpComponent } from './components/home/work-pop-up/work-pop-up.component';
+import { PositivePsychComponent } from './components/courses/positive-psych/positive-psych.component';
 
 
 const appRoutes: Routes = [
@@ -53,6 +54,7 @@ const appRoutes: Routes = [
       { path: 'AI', component: AIComponent },
       { path: 'CogPsych', component: CognitivePsychComponent },
       { path: 'Perception', component: PerceptionComponent },
+      { path: 'PositivePsych', component: PositivePsychComponent },
       { path: 'SocialPsych', component: SocialPsychComponent },
       { path: 'Network', component: NetworkComponent },
       { path: 'Personnel', component: PersonnelComponent }
@@ -91,7 +93,8 @@ const appRoutes: Routes = [
     SocialPsychComponent,
     NetworkComponent,
     PersonnelComponent,
-    WorkPopUpComponent
+    WorkPopUpComponent,
+    PositivePsychComponent
   ],
   imports: [
     BrowserModule,
